@@ -556,8 +556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75537f7f84de4ab46bc3e1817a8cd46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  floorPrefab: {fileID: 1705459861}
+  spawnPoint: {fileID: 2061013260}
   minSpawnDelay: 3
   maxSpawnDelay: 5
   minYOffset: -0.5
