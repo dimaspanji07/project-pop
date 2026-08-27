@@ -12,41 +12,49 @@ public class PlatformSpawner : MonoBehaviour
     [SerializeField] private float maxSpawnDelay = 5f;
 
     [Header("Random Height")]
-    [SerializeField] private float minYOffset = -0.5f;
-    [SerializeField] private float maxYOffset = 0.5f;
+    [SerializeField] private float minYOffset = 0f;
+    [SerializeField] private float maxYOffset = 0f;
 
     private float timer;
     private float nextSpawnTime;
 
     private void Start()
     {
-        ResetSpawnTimer();
+        SetNextSpawnTime();
     }
 
     private void Update()
     {
         timer += Time.deltaTime;
 
-        if (timer < nextSpawnTime)
-            return;
+        if (timer >= nextSpawnTime)
+        {
+            CreatePlatform();
 
-        CreatePlatform();
-
-        timer = 0f;
-        ResetSpawnTimer();
+            timer = 0f;
+            SetNextSpawnTime();
+        }
     }
 
     private void CreatePlatform()
     {
         if (floorPrefab == null)
         {
-            Debug.LogError("PlatformSpawner: Floor Prefab belum diisi.");
+            Debug.LogError(
+                $"[{gameObject.name}] Floor Prefab NULL! Instance ID: {GetInstanceID()}",
+                gameObject
+            );
+
             return;
         }
 
         if (spawnPoint == null)
         {
-            Debug.LogError("PlatformSpawner: Spawn Point belum diisi.");
+            Debug.LogError(
+                $"[{gameObject.name}] Spawn Point NULL! Instance ID: {GetInstanceID()}",
+                gameObject
+            );
+
             return;
         }
 
@@ -57,14 +65,18 @@ public class PlatformSpawner : MonoBehaviour
             maxYOffset
         );
 
-        Instantiate(
+        GameObject newFloor = Instantiate(
             floorPrefab,
             spawnPosition,
             Quaternion.identity
         );
+
+        Debug.Log(
+            $"Spawn berhasil: {newFloor.name} di {spawnPosition}"
+        );
     }
 
-    private void ResetSpawnTimer()
+    private void SetNextSpawnTime()
     {
         nextSpawnTime = Random.Range(
             minSpawnDelay,
