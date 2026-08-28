@@ -1321,8 +1321,8 @@ GameObject:
   - component: {fileID: 2033008364}
   - component: {fileID: 2033008370}
   - component: {fileID: 2033008369}
-  - component: {fileID: 2033008371}
   - component: {fileID: 2033008372}
+  - component: {fileID: 2033008373}
   m_Layer: 0
   m_Name: Kucing
   m_TagString: Untagged
@@ -1496,22 +1496,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2033008371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033008363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31478c077fc69bc468def1648af476fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
-  audioSource: {fileID: 0}
-  jumpSFX: {fileID: 8300000, guid: fcbad0e56923edc41ab74aac843c72ce, type: 3}
 --- !u!82 &2033008372
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1608,6 +1592,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2033008373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033008363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf94b7a1d041daf44bc8fcdc2409730a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 5
+  audioSource: {fileID: 0}
+  jumpSFX: {fileID: 8300000, guid: fcbad0e56923edc41ab74aac843c72ce, type: 3}
 --- !u!1 &2098857844
 GameObject:
   m_ObjectHideFlags: 0
