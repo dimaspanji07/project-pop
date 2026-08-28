@@ -22,10 +22,10 @@ public class CatController : MonoBehaviour
     private bool jumpUsed;
     private bool isVoidFalling;
 
-    // Menyimpan collider tanah yang sedang disentuh.
+    // Menyimpan lantai/platform yang sedang disentuh.
     private readonly HashSet<Collider2D> groundContacts = new();
 
-    // Animator parameter hash
+    // Animator Parameters
     private static readonly int IsMovingHash =
         Animator.StringToHash("isMoving");
 
@@ -46,26 +46,27 @@ public class CatController : MonoBehaviour
 
     private void Update()
     {
+        // Kalau sudah masuk void,
+        // player tidak bisa dikontrol lagi.
         if (isVoidFalling)
         {
             horizontalInput = 0f;
-            UpdateAnimation();
+            UpdateAnimator();
             return;
         }
 
-        ReadInput();
+        ReadMovementInput();
         HandleJump();
-        UpdateAnimation();
         UpdateFacingDirection();
+        UpdateAnimator();
     }
 
 
     private void FixedUpdate()
     {
-        // Saat jatuh ke void,
-        // player tidak bisa dikontrol lagi.
         if (isVoidFalling)
         {
+            // Saat jatuh ke void hanya biarkan jatuh vertikal.
             rb.velocity = new Vector2(
                 0f,
                 rb.velocity.y
@@ -81,11 +82,11 @@ public class CatController : MonoBehaviour
     }
 
 
-    // =========================
+    // =====================================================
     // MOVEMENT
-    // =========================
+    // =====================================================
 
-    private void ReadInput()
+    private void ReadMovementInput()
     {
         horizontalInput = 0f;
 
@@ -93,7 +94,8 @@ public class CatController : MonoBehaviour
         {
             horizontalInput = -1f;
         }
-        else if (Input.GetKey(KeyCode.D))
+
+        if (Input.GetKey(KeyCode.D))
         {
             horizontalInput = 1f;
         }
@@ -116,9 +118,9 @@ public class CatController : MonoBehaviour
     }
 
 
-    // =========================
+    // =====================================================
     // JUMP
-    // =========================
+    // =====================================================
 
     private void HandleJump()
     {
@@ -129,11 +131,11 @@ public class CatController : MonoBehaviour
         if (!jumpPressed)
             return;
 
-        // Tidak boleh lompat kalau sedang di udara.
+        // Harus menyentuh tanah.
         if (!isGrounded)
             return;
 
-        // Mencegah double jump.
+        // Tidak boleh double jump.
         if (jumpUsed)
             return;
 
@@ -148,6 +150,12 @@ public class CatController : MonoBehaviour
 
         groundContacts.Clear();
 
+        // Reset Y agar tinggi jump konsisten.
+        rb.velocity = new Vector2(
+            rb.velocity.x,
+            0f
+        );
+
         rb.velocity = new Vector2(
             rb.velocity.x,
             jumpForce
@@ -155,11 +163,11 @@ public class CatController : MonoBehaviour
     }
 
 
-    // =========================
-    // ANIMATION
-    // =========================
+    // =====================================================
+    // ANIMATOR
+    // =====================================================
 
-    private void UpdateAnimation()
+    private void UpdateAnimator()
     {
         if (animator == null)
             return;
@@ -168,18 +176,16 @@ public class CatController : MonoBehaviour
             Mathf.Abs(horizontalInput) > 0.01f;
 
         /*
-         * PENTING:
+         * Jump animation:
          *
-         * Jump tetap TRUE selama player berada
-         * di udara NORMAL.
+         * Selama player berada di udara NORMAL,
+         * tetap pakai Cat_Jump.
          *
-         * Jadi ketika selesai naik lalu turun,
-         * animasi masih Cat_Jump.
+         * Jadi saat naik maupun turun setelah jump,
+         * tetap dianggap Jump.
          *
-         * Cat_Fall hanya dipakai kalau
-         * isVoidFalling == true.
+         * Fall hanya muncul kalau masuk VoidZone.
          */
-
         bool isJumping =
             !isGrounded &&
             !isVoidFalling;
@@ -201,9 +207,9 @@ public class CatController : MonoBehaviour
     }
 
 
-    // =========================
+    // =====================================================
     // GROUND DETECTION
-    // =========================
+    // =====================================================
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -230,19 +236,25 @@ public class CatController : MonoBehaviour
 
     private void DetectGround(Collision2D collision)
     {
-        // Kalau sudah masuk void,
-        // jangan dianggap grounded lagi.
         if (isVoidFalling)
+            return;
+
+        /*
+         * Saat player sedang naik setelah jump,
+         * jangan langsung dianggap grounded lagi.
+         */
+        if (jumpUsed && rb.velocity.y > 0.1f)
             return;
 
         foreach (ContactPoint2D contact in collision.contacts)
         {
             /*
-             * normal.y > 0.5
-             * berarti collider berada
-             * di bawah Player.
+             * Normal Y positif berarti ada collider
+             * di bawah player.
+             *
+             * Jadi menyentuh tembok dari samping
+             * tidak dianggap Ground.
              */
-
             if (contact.normal.y <= 0.5f)
                 continue;
 
@@ -253,17 +265,20 @@ public class CatController : MonoBehaviour
             isGrounded = true;
 
             // Sudah mendarat.
-            // Jump boleh digunakan lagi.
-            jumpUsed = false;
+            // Jump tersedia kembali.
+            if (rb.velocity.y <= 0.1f)
+            {
+                jumpUsed = false;
+            }
 
             return;
         }
     }
 
 
-    // =========================
-    // VOID
-    // =========================
+    // =====================================================
+    // VOID / FALL
+    // =====================================================
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -281,12 +296,13 @@ public class CatController : MonoBehaviour
 
         isVoidFalling = true;
         isGrounded = false;
-
-        groundContacts.Clear();
+        jumpUsed = true;
 
         horizontalInput = 0f;
 
-        // Langsung paksa parameter animator.
+        groundContacts.Clear();
+
+        // Langsung pindah ke Fall Animation.
         animator.SetBool(
             IsMovingHash,
             false
@@ -302,11 +318,14 @@ public class CatController : MonoBehaviour
             true
         );
 
-        Debug.Log("Player masuk VOID → Fall Animation");
+        Debug.Log("CAT FALL → Player masuk VoidZone");
     }
 
 
-    // Bisa dipakai nanti ketika respawn.
+    // =====================================================
+    // RESPAWN
+    // =====================================================
+
     public void ResetPlayerState()
     {
         isVoidFalling = false;
@@ -316,6 +335,8 @@ public class CatController : MonoBehaviour
         horizontalInput = 0f;
 
         groundContacts.Clear();
+
+        rb.velocity = Vector2.zero;
 
         animator.SetBool(
             IsMovingHash,
