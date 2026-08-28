@@ -646,8 +646,13 @@ Transform:
   m_GameObject: {fileID: 367961086}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream:Assets/pro-pop.unity
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_LocalPosition: {x: -0.02, y: 0.07, z: 0}
+  m_LocalScale: {x: 1.125648, y: 1.0880593, z: 1}
+>>>>>>> Stashed changes:Assets/Scenes/pro-pop.unity
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1130,6 +1135,7 @@ Transform:
   - {fileID: 1734093958}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:Assets/pro-pop.unity
 --- !u!114 &601865451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1723,6 +1729,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1734646261649814637, guid: 206ead859432ca845a764a4900859cc8, type: 3}
   m_PrefabInstance: {fileID: 861044389}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/pro-pop.unity
 --- !u!1 &935621502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,9 +1954,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream:Assets/pro-pop.unity
   - component: {fileID: 954418859}
   - component: {fileID: 954418860}
   - component: {fileID: 954418863}
+=======
+  - component: {fileID: 1380881191}
+  - component: {fileID: 1380881193}
+>>>>>>> Stashed changes:Assets/Scenes/pro-pop.unity
   m_Layer: 0
   m_Name: Kabel listrik
   m_TagString: Untagged
@@ -1956,7 +1969,11 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream:Assets/pro-pop.unity
 --- !u!4 &954418859
+=======
+--- !u!4 &1380881191
+>>>>>>> Stashed changes:Assets/Scenes/pro-pop.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2444,6 +2461,7 @@ Transform:
   - {fileID: 606600956}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:Assets/pro-pop.unity
 --- !u!1001 &1123696939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2560,11 +2578,15 @@ RectTransform:
   m_SizeDelta: {x: 689.8, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372348940
+=======
+--- !u!114 &1380881193
+>>>>>>> Stashed changes:Assets/Scenes/pro-pop.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/pro-pop.unity
   m_GameObject: {fileID: 1372348938}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3893,6 +3915,24 @@ SpriteRenderer:
 >>>>>>> 68b5ebae1ee11f511cd964eea8b959820fdd0317
 =======
 >>>>>>> 68b5ebae1ee11f511cd964eea8b959820fdd0317
+=======
+  m_GameObject: {fileID: 1380881189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e8f731e9aade34d83dec7781777832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  housePrefabs:
+  - {fileID: 3961492556524574809, guid: c0bb29a84c8e01945b5b765148f0edd9, type: 3}
+  - {fileID: 7986335597561173581, guid: 0b101e70e2bd68d46993add804b61cbc, type: 3}
+  spawnX: 12
+  spawnY: 0
+  despawnX: -15
+  moveSpeed: 3
+  minInterval: 1.2
+  maxInterval: 2.2
+  skipChance: 0
+>>>>>>> Stashed changes:Assets/Scenes/pro-pop.unity
 --- !u!1 &1988686997
 GameObject:
   m_ObjectHideFlags: 0
@@ -3932,6 +3972,7 @@ Transform:
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< Updated upstream:Assets/pro-pop.unity
   m_Modification:
     serializedVersion: 3
     m_TransformParent: {fileID: 632599597}
@@ -4371,13 +4412,27 @@ PrefabInstance:
 >>>>>>> 68b5ebae1ee11f511cd964eea8b959820fdd0317
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eca3bef8b0596a14dbe7da5c43c12c06, type: 3}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12, y: -2.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1380881191}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes:Assets/Scenes/pro-pop.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 601865450}
+<<<<<<< Updated upstream:Assets/pro-pop.unity
   - {fileID: 154591642}
   - {fileID: 8643309293319305370}
+=======
+  - {fileID: 315664806}
+  - {fileID: 1380881191}
+>>>>>>> Stashed changes:Assets/Scenes/pro-pop.unity
   - {fileID: 935621505}
 <<<<<<< HEAD
   - {fileID: 588881596}

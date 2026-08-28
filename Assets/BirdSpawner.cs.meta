@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/BirdSpawner.cs.meta
 guid: c528a7adedd2640499d882af725934e4
+========
+guid: 88e8f731e9aade34d83dec7781777832
+>>>>>>>> Stashed changes:Assets/platformmover.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
