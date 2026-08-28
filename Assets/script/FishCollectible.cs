@@ -3,21 +3,17 @@ using UnityEngine;
 public class FishCollectible : MonoBehaviour
 {
     [Header("Fish")]
-    public float staminaRestore = 20f;
+    [SerializeField] private float staminaRestore = 20f;
+    [SerializeField] private string playerTag = "Player";
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (player != null)
+        if (!other.CompareTag(playerTag)) return;
+
+        if (other.TryGetComponent<PlayerController>(out var player))
         {
-            // Tambahkan stamina
             player.RestoreStamina(staminaRestore);
-
-            Debug.Log(
-                "Fish diambil! Stamina +" +
-                staminaRestore
-            );
-
-            // Hapus fish
+            Debug.Log($"Fish diambil! Stamina +{staminaRestore}");
             Destroy(gameObject);
         }
     }
