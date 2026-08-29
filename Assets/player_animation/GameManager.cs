@@ -40,7 +40,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
+        // Tekan ESC untuk langsung kembali ke Main Menu
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            LoadMainMenu();
+        }
+
+        // Tekan P untuk Pause / Unpause game
+        if (Input.GetKeyDown(KeyCode.P))
         {
             if (currentState == GameState.Playing) ChangeState(GameState.Paused);
             else if (currentState == GameState.Paused) ChangeState(GameState.Playing);
