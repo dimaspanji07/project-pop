@@ -1,23 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEgine.SceneManagement;
 
-public class controlmenu : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu")
     }
 
-    public void  LoadGamePlay()
+    public void LoadGameplay()
     {
         SceneManager.LoadScene("pro-pop")
     }
 
     public void QuitGame()
     {
-        Apllication.Quit()
+        Apllication.Quit();
         Debug.Log("Quit")
     }
- }
+}

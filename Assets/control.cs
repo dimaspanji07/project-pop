@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class controlmenu : MonoBehaviour
+public class Ngaturin : MonoBehaviour
 {
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu")
     }
 
-    public void  LoadGamePlay()
+    public void LoadGamePlay()
     {
         SceneManager.LoadScene("pro-pop")
     }
 
     public void QuitGame()
     {
-        Apllication.Quit()
+        Application.Quit()
         Debug.Log("Quit")
     }
- }
+}
