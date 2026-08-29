@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Ground
   - bird
-  - win
-  - Obstacle
   - Void
   layers:
   - Default

@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/WinScene.unity
-    guid: 3deba941064ec174db0678aba4810a5b
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: cbaedc9fc977c7c4abbd832b469e7cc3
+    guid: 53a1c861c2fe31a498a274fcb0161787
+  - enabled: 1
+    path: Assets/player_animation/pro-pop.unity
+    guid: f619859f4559dae459e873fa106de7f1
   m_configObjects: {}
