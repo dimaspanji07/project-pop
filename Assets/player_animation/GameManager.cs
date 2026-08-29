@@ -20,8 +20,6 @@ public class GameManager : MonoBehaviour
     public GameState currentState;
 
     [Header("UI Reference")]
-    [Tooltip("Tarik Panel Game Over dari Hierarchy ke sini")]
-    public GameObject gameOverUI; 
     public GameObject pausePanel;
     public GameObject gameWinPanel;
 
@@ -42,7 +40,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // Fitur Pause toggle dengan tombol ESC atau P
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             if (currentState == GameState.Playing) ChangeState(GameState.Paused);
@@ -59,58 +56,49 @@ public class GameManager : MonoBehaviour
         {
             case GameState.Playing:
                 Time.timeScale = 1f;
-                SetAllPanelsActive(false, false, false);
+                SetPanelsActive(false, false);
                 break;
 
             case GameState.DieByBird:
                 Debug.Log("GAME OVER: Terkena Burung!");
-                HandleGameOver();
+                RestartGame();
                 break;
 
             case GameState.DieByCat:
                 Debug.Log("GAME OVER: Terkena Kucing Kuning!");
-                HandleGameOver();
+                RestartGame();
                 break;
 
             case GameState.DieByVoid:
                 Debug.Log("GAME OVER: Jatuh ke Jurang / Void!");
-                HandleGameOver();
+                RestartGame();
                 break;
 
             case GameState.GameWin:
                 Debug.Log("YOU WIN!");
-                // MODIFIKASI: Time.timeScale tetap 1f agar animasi player tetap berjalan melayang/beraksi saat menang
                 Time.timeScale = 1f; 
-                SetAllPanelsActive(false, false, true);
+                SetPanelsActive(false, true);
                 break;
 
             case GameState.Paused:
                 Time.timeScale = 0f;
-                SetAllPanelsActive(false, true, false);
+                SetPanelsActive(true, false);
                 break;
         }
     }
 
-    // Fungsi kompatibilitas agar panggil GameManager.instance.GameOver() lama tidak error
+    // Fungsi kompatibilitas jika dipanggil dari script lain
     public void GameOver()
     {
-        ChangeState(GameState.DieByCat);
+        RestartGame();
     }
 
-    private void HandleGameOver()
+    private void SetPanelsActive(bool pause, bool win)
     {
-        Time.timeScale = 0f; // Membekukan waktu game saat mati
-        SetAllPanelsActive(true, false, false);
-    }
-
-    private void SetAllPanelsActive(bool gameOver, bool pause, bool win)
-    {
-        if (gameOverUI != null) gameOverUI.SetActive(gameOver);
         if (pausePanel != null) pausePanel.SetActive(pause);
         if (gameWinPanel != null) gameWinPanel.SetActive(win);
     }
 
-    // Fungsi Tombol UI
     public void RestartGame()
     {
         Time.timeScale = 1f;
@@ -122,7 +110,6 @@ public class GameManager : MonoBehaviour
         ChangeState(GameState.Playing);
     }
 
-    // MODIFIKASI: Tambahan fungsi untuk kembali ke Main Menu
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;
