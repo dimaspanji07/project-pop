@@ -282,7 +282,7 @@ public class CatController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Void"))
+        if (!other.CompareTag("Player"))
             return;
 
         EnterVoid();

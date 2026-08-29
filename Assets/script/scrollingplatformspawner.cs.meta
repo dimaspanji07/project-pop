@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 <<<<<<<< Updated upstream:Assets/BirdObstacle.cs.meta
+<<<<<<< HEAD:Assets/scrollingplatformspawner.cs.meta
 guid: 218d43ee5d8822a46a2c14949209cfda
+=======
+guid: 62c9766f511524b4e92cd01c3ec204f8
+>>>>>>> origin/New-Main:Assets/script/scrollingplatformspawner.cs.meta
 ========
 guid: 6c46a007bc363e44d96b838f03d22b19
 >>>>>>>> Stashed changes:Assets/scrollingplatformspawner.cs.meta
