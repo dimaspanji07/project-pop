@@ -7,7 +7,7 @@ public class catobstacle : MonoBehaviour
     private bool hasTriggered = false;
 
     [Header("Settings")]
-    public float delayGameOver = 0.3f; // Jeda waktu (detik) agar animasi kaget selesai diputar
+    public float delayGameOver = 0.5f; // Jeda animasi
 
     private void Start()
     {
@@ -16,6 +16,7 @@ public class catobstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Pengecekan aman tag Player
         if (collision.CompareTag("Player") && !hasTriggered)
         {
             hasTriggered = true;
@@ -26,17 +27,23 @@ public class catobstacle : MonoBehaviour
                 anim.SetBool("IsHit", true);
             }
 
-            // 2. Jalankan delay sebelum Game Over
+            // 2. Hentikan pergerakan player agar tidak tetap berjalan saat kaget
+            Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();
+            if (playerRb != null)
+            {
+                playerRb.velocity = Vector2.zero;
+            }
+
+            // 3. Jalankan delay
             StartCoroutine(WaitAndGameOver());
         }
     }
 
     private IEnumerator WaitAndGameOver()
     {
-        // Menunggu selama delayGameOver detik
-        yield return new WaitForSeconds(delayGameOver);
+        // Menggunakan Realtime agar delay tetap jalan jika Time.timeScale = 0
+        yield return new WaitForSecondsRealtime(delayGameOver);
 
-        // Memanggil Game Over setelah animasi kaget selesai
         if (GameManager.instance != null)
         {
             GameManager.instance.GameOver();
