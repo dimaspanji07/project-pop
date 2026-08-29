@@ -242,6 +242,6 @@ MonoBehaviour:
   sfxSource: {fileID: 638816616988042150}
   menuBGM: {fileID: 0}
   gameplayBGM: {fileID: 8300000, guid: e66745b1ff72c9a4186ae58ebef78509, type: 3}
-  fishSFX: {fileID: 0}
-  gameOverSFX: {fileID: 0}
-  victorySFX: {fileID: 0}
+  fishSFX: {fileID: 8300000, guid: 77d735d66995d1444b0ca411d270a4a9, type: 3}
+  gameOverSFX: {fileID: 8300000, guid: f47bdc9d64bd0a049ac3d48e6b34385d, type: 3}
+  victorySFX: {fileID: 8300000, guid: 49877484d37c71149b7a17da1bfaf1e9, type: 3}
