@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour
     public GameObject pausePanel;
     public GameObject gameWinPanel;
 
+    [Header("Scene Settings")]
+    [Tooltip("Nama Scene Main Menu Anda")]
+    public string mainMenuSceneName = "MainMenu";
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -75,7 +79,8 @@ public class GameManager : MonoBehaviour
 
             case GameState.GameWin:
                 Debug.Log("YOU WIN!");
-                Time.timeScale = 0f;
+                // MODIFIKASI: Time.timeScale tetap 1f agar animasi player tetap berjalan melayang/beraksi saat menang
+                Time.timeScale = 1f; 
                 SetAllPanelsActive(false, false, true);
                 break;
 
@@ -94,7 +99,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleGameOver()
     {
-        Time.timeScale = 0f; // Membekukan waktu game
+        Time.timeScale = 0f; // Membekukan waktu game saat mati
         SetAllPanelsActive(true, false, false);
     }
 
@@ -115,5 +120,12 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         ChangeState(GameState.Playing);
+    }
+
+    // MODIFIKASI: Tambahan fungsi untuk kembali ke Main Menu
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 }
