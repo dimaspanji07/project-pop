@@ -159,7 +159,6 @@ Transform:
   - {fileID: 293139856}
   - {fileID: 469315335}
   - {fileID: 278704322}
-  - {fileID: 188868925}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140290079
@@ -294,189 +293,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &182786069
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 134.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
---- !u!1 &188868924
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 188868925}
-  m_Layer: 0
-  m_Name: Tiang
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &188868925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188868924}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2099995842}
-  - {fileID: 220187912}
-  - {fileID: 949537276}
-  - {fileID: 678781488}
-  - {fileID: 579723855}
-  - {fileID: 1889942494}
-  - {fileID: 2107564725}
-  - {fileID: 1990851726}
-  - {fileID: 298350138}
-  m_Father: {fileID: 72965235}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &220187911
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
---- !u!4 &220187912 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 220187911}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &243474820
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,11 +602,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!4 &298350138 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 385783549}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &335273191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1012,213 +823,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!1001 &339758222
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 84.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
---- !u!1001 &385783549
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 190.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
---- !u!1001 &403052131
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -25.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
 --- !u!1 &427693609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1175,7 @@ Transform:
   m_GameObject: {fileID: 517375802}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.39, y: -0.5, z: 0}
+  m_LocalPosition: {x: -75.2, y: -0.5, z: 0}
   m_LocalScale: {x: 1.7482634, y: 1.6702263, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1613,11 +1217,83 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &579723855 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 339758222}
+--- !u!1 &575724706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575724708}
+  - component: {fileID: 575724707}
+  m_Layer: 0
+  m_Name: Void
+  m_TagString: Void
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &575724707
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575724706}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 130.44022, y: -32.620087}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 354.42578, y: 68.81557}
+  m_EdgeRadius: 0
+--- !u!4 &575724708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575724706}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -54.14982, y: -8.13, z: -0.14593473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &608062916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,80 +1345,6 @@ MonoBehaviour:
   minOffsetY: 0.5
   maxOffsetY: 1
   offscreenMargin: 20
---- !u!1001 &678781487
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 56.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
---- !u!4 &678781488 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 678781487}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &775003985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,149 +1401,6 @@ MonoBehaviour:
   catHeightOffset: 0.6
   maxSlopeTolerance: 0.5
   safeBufferDistance: 1.5
---- !u!1001 &862638033
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 162
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
---- !u!1001 &949537275
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 29.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
---- !u!4 &949537276 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 949537275}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1234550182
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,7 +1504,7 @@ Transform:
   m_GameObject: {fileID: 1234550182}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.22, y: 1.73, z: -10}
+  m_LocalPosition: {x: -63.9, y: 1.73, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2697,11 +2156,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!4 &1889942494 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 1995138512}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1907432848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2903,90 +2357,6 @@ Transform:
   - {fileID: 608062917}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1990851726 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 862638033}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1995138512
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 188868925}
-    m_Modifications:
-    - target: {fileID: 2432072024287520996, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_Name
-      value: Kabel listrik (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4473332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4311382
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 106.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11860.8545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184845972058143602, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
---- !u!4 &2099995842 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 403052131}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2107564725 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5935413162459398732, guid: 6ca0312c06a91a44a9ce66c0c249becb, type: 3}
-  m_PrefabInstance: {fileID: 182786069}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2128522304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3165,3 +2535,4 @@ SceneRoots:
   - {fileID: 1955389563}
   - {fileID: 149113473}
   - {fileID: 427693611}
+  - {fileID: 575724708}
